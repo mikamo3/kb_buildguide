@@ -1,5 +1,20 @@
 site_name: ビルドガイド
-theme: readthedocs
+theme: material
 nav:
   - Home: home.md
   - keychain: keychain.md
+
+extra:
+  site:
+    name: キーボード屋かもさん
+    url: https://mkamo3.booth.pm/
+
+extra_css:
+  - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+  - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
+  - "css/custom.css"
+plugins:
+  - macros
+
+markdown_extensions:
+  - admonition
