@@ -36,7 +36,8 @@
 		"shd101wyy.markdown-preview-enhanced",
 		"yzhang.markdown-all-in-one",
 		"davidanson.vscode-markdownlint",
-		"taichi.vscode-textlint"
+		"taichi.vscode-textlint",
+		"redhat.vscode-yaml"
 	],
 	"appPort": [
 		"8000:8000"
