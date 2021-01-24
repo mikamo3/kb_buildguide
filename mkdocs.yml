@@ -1,1 +1,5 @@
 site_name: ビルドガイド
+theme: readthedocs
+nav:
+  - Home: home.md
+  - keychain: keychain.md
