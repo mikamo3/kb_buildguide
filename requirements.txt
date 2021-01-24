@@ -1,3 +1,4 @@
 mkdocs
 mkdocs-macros-plugin
 mkdocs-material
+fontawesome_markdown
