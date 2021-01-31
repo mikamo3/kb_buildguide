@@ -1,177 +1,830 @@
-<!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>keychain - ビルドガイド</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "keychain";
-    var mkdocs_page_input_path = "keychain.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> ビルドガイド</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../home/">Home</a>
-                    </li>
-                </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">keychain</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#_1">概要</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_2">ビルドガイド</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#_3">同梱品の確認</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#led">LEDの取り付け</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#_4">キースイッチソケットの取り付け</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#_5">抵抗の取り付け</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#_6">電池ソケットとコネクタの取り付け</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#option">(option)動作確認</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#_7">電池ソケットと基板の取り付け</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#_8">ケース組み立て</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#_9">キースイッチの取り付け</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
-                    </li>
-                </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">ビルドガイド</a>
-      </nav>
-
       
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.7">
+    
     
       
+        <title>Keychain - ビルドガイド</title>
+      
     
-    <li>keychain</li>
-    <li class="wy-breadcrumbs-aside">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.cb6bc1d0.min.css">
       
-    </li>
-  </ul>
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjp.css">
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:600,800">
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-TLJ8NFYHM6","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
   
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
-              
-                <h1 id="keychain">Keychain</h1>
-<h2 id="_1">概要</h2>
-<h2 id="_2">ビルドガイド</h2>
-<h3 id="_3">同梱品の確認</h3>
-<h3 id="led">LEDの取り付け</h3>
-<h3 id="_4">キースイッチソケットの取り付け</h3>
-<h3 id="_5">抵抗の取り付け</h3>
-<h3 id="_6">電池ソケットとコネクタの取り付け</h3>
-<h3 id="option">(option)動作確認</h3>
-<h3 id="_7">電池ソケットと基板の取り付け</h3>
-<h3 id="_8">ケース組み立て</h3>
-<h3 id="_9">キースイッチの取り付け</h3>
-              
-            </div>
-          </div>
-          <footer>
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
       
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
       
-        <a href="../home/" class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        
+        <a href="#keychain" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
+    <div data-md-component="announce">
       
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="ビルドガイド" class="md-header-nav__button md-logo" aria-label="ビルドガイド">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            ビルドガイド
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Keychain
+            
+          </span>
         </div>
       </div>
+    </div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
 
-    </section>
 
-  </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ビルドガイド" class="md-nav__button md-logo" aria-label="ビルドガイド">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    ビルドガイド
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
       
       
-        <span><a href="../home/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../home/" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
       
       
-    </span>
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Keychain
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Keychain
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    概要
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    ビルドガイド
+  </a>
+  
+    <nav class="md-nav" aria-label="ビルドガイド">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    同梱品の確認
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    別途容易いただくもの
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb" class="md-nav__link">
+    PCBの表、裏の表記について
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led" class="md-nav__link">
+    チップLEDの取り付け
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    キースイッチソケットの取り付け
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    抵抗の取り付け
+  </a>
+  
+    <nav class="md-nav" aria-label="抵抗の取り付け">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#led_1" class="md-nav__link">
+    赤色チップLEDを選択した場合
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led_2" class="md-nav__link">
+    赤色チップLED以外を選択した場合
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    電池ソケットとコネクタの取り付け
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    動作確認
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    電池ソケットと基板の取り付け
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    ケース組み立て
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    ストラップ取り付け
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    キースイッチの取り付け
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    概要
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    ビルドガイド
+  </a>
+  
+    <nav class="md-nav" aria-label="ビルドガイド">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    同梱品の確認
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    別途容易いただくもの
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb" class="md-nav__link">
+    PCBの表、裏の表記について
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led" class="md-nav__link">
+    チップLEDの取り付け
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    キースイッチソケットの取り付け
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    抵抗の取り付け
+  </a>
+  
+    <nav class="md-nav" aria-label="抵抗の取り付け">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#led_1" class="md-nav__link">
+    赤色チップLEDを選択した場合
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led_2" class="md-nav__link">
+    赤色チップLED以外を選択した場合
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    電池ソケットとコネクタの取り付け
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    動作確認
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    電池ソケットと基板の取り付け
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    ケース組み立て
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    ストラップ取り付け
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    キースイッチの取り付け
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="keychain">Keychain</h1>
+<h2 id="_1">概要</h2>
+<p>ご覧頂きありがとうございます。
+Keychainは以下の特徴を持ったキースイッチ型ストラップの組み立てキットです。</p>
+<ul>
+<li>ソケット式のためお好みのキースイッチ、キーキャップを利用可能</li>
+<li>スイッチ押下時に光る</li>
+<li>お好みに合わせて選べるLED</li>
+</ul>
+<p>以下にて頒布中です。</p>
+<p><a href="https://mkamo3.booth.pm/"><i class="fa fa-external-link"></i>キーボード屋　かもさん</a></p>
+<div class="admonition notice">
+<p class="admonition-title">Notice</p>
+<p>こちらのキットはハンダゴテを使用してご自身で組み立てるキットになります。</p>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        };
-    </script>
+<h2 id="_2">ビルドガイド</h2>
+<h3 id="_3"><i class="fa fa-arrow-circle-right"></i>同梱品の確認</h3>
+<p>商品がお手元に到着しましたら以下のものが同梱されているかご確認ください。</p>
+<table>
+<thead>
+<tr>
+<th align="left">品名</th>
+<th align="right">個数</th>
+<th align="center">写真、備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">PCB</td>
+<td align="right">1</td>
+<td align="center"><img alt="PCB" src="../img/keychain/01_pcb.jpg" />PCB横の切れ込みは右側になることもあります。</td>
+</tr>
+<tr>
+<td align="left">抵抗</td>
+<td align="right">1</td>
+<td align="center"><img alt="抵抗" src="../img/keychain/01_reg.jpg" /></td>
+</tr>
+<tr>
+<td align="left">チップLED</td>
+<td align="right">2</td>
+<td align="center"><img alt="チップLED" src="../img/keychain/01_led.jpg" />1つは壊れたときの予備</td>
+</tr>
+<tr>
+<td align="left">スイッチ用PCBソケット</td>
+<td align="right">1</td>
+<td align="center"><img alt="スイッチ用PCBソケット" src="../img/keychain/01_keyswitch_socket.jpg" /></td>
+</tr>
+<tr>
+<td align="left">ボタン電池</td>
+<td align="right">1</td>
+<td align="center"><img alt="ボタン電池" src="../img/keychain/01_battery.jpg" /></td>
+</tr>
+<tr>
+<td align="left">ボタン電池ソケット</td>
+<td align="right">1</td>
+<td align="center"><img alt="ボタン電池ソケット" src="../img/keychain/01_batteryholder.jpg" /></td>
+</tr>
+<tr>
+<td align="left">ボタン電池ソケットコネクタ（4PIN）</td>
+<td align="right">1</td>
+<td align="center">ボタン電池ソケットのパッケージ内に同梱</td>
+</tr>
+<tr>
+<td align="left">ネジ</td>
+<td align="right">8</td>
+<td align="center"><img alt="ネジ" src="../img/keychain/01_screw.jpg" /></td>
+</tr>
+<tr>
+<td align="left">スペーサー</td>
+<td align="right">4</td>
+<td align="center"><img alt="スペーサー" src="../img/keychain/01_spacer.jpg" /></td>
+</tr>
+<tr>
+<td align="left">アクリルプレート（スイッチ取り付け部）</td>
+<td align="right">1</td>
+<td align="center"><img alt="アクリル01" src="../img/keychain/01_acrylic_01.jpg" /></td>
+</tr>
+<tr>
+<td align="left">アクリルプレート（PCB直上部）</td>
+<td align="right">1</td>
+<td align="center"><img alt="アクリル02" src="../img/keychain/01_acrylic_02.jpg" />厚さが3mmのほう</td>
+</tr>
+<tr>
+<td align="left">アクリルプレート（PCB直下部）</td>
+<td align="right">1</td>
+<td align="center"><img alt="アクリル03" src="../img/keychain/01_acrylic_03.jpg" />厚さが7mmのほう</td>
+</tr>
+<tr>
+<td align="left">アクリルプレート（底部）</td>
+<td align="right">1</td>
+<td align="center"><img alt="アクリル04" src="../img/keychain/01_acrylic_04.jpg" /></td>
+</tr>
+<tr>
+<td align="left">ストラップ</td>
+<td align="right">1</td>
+<td align="center"><img alt="ストラップ" src="../img/keychain/01_strap.jpg" /></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>万が一不足がある場合はBoothのメッセージにてご連絡ください。</p>
+</div>
+<h3 id="_4"><i class="fa fa-arrow-circle-right"></i>別途容易いただくもの</h3>
+<p>以下のものは別途ご用意ください。</p>
+<table>
+<thead>
+<tr>
+<th align="left">品名</th>
+<th align="right">個数</th>
+<th align="center">備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">キースイッチ</td>
+<td align="right">1</td>
+<td align="center">CherryMXあるいはその互換スイッチのみ対応</td>
+</tr>
+<tr>
+<td align="left">キーキャップ</td>
+<td align="right">1</td>
+<td align="center">キースイッチに対応するもの</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pcb"><i class="fa fa-arrow-circle-right"></i>PCBの表、裏の表記について</h3>
+<p>PCBの表面、裏面の表記は以下のとおりとします。</p>
+<table>
+<thead>
+<tr>
+<th align="left">表記</th>
+<th align="right">写真</th>
+<th align="center">備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">表面</td>
+<td align="right"><img alt="表面" src="../img/keychain/pcb_surface.jpg" /></td>
+<td align="center">キースイッチが刺さる側</td>
+</tr>
+<tr>
+<td align="left">裏面</td>
+<td align="right"><img alt="裏面" src="../img/keychain/pcb_back.jpg" /></td>
+<td align="center">ボタン電池ソケットが取り付けられる側</td>
+</tr>
+</tbody>
+</table>
+<h3 id="led"><i class="fa fa-arrow-circle-right"></i>チップLEDの取り付け</h3>
+<p>チップLEDをPCBのうら面から取り付けます。</p>
+<p>チップLEDには向きがあります。</p>
+<p>PCBの表から見て三角の切れ込みが右側になるようにはんだ付けしてください。</p>
+<p><img alt="LEDの方向" src="../img/keychain/soldering_led_adjust.jpg" />
+<img alt="LEDの方向" src="../img/keychain/soldering_led.jpg" /></p>
+<div class="admonition tips ledの取り付け例">
+<p class="admonition-title">Tips</p>
+<p>一例として以下のようにはんだ付けすると比較的楽にはんだ付けできます。</p>
+<p>用意するもの</p>
+<ul>
+<li>白光 ダイヤル式温度制御はんだこて FX600</li>
+<li>白光 こて先 2C型</li>
+<li>フラックス</li>
+<li>鉛入りはんだ</li>
+</ul>
+<p>（はんだごて、こて先は同等品でもOK）</p>
+<p>LEDを表面よりマスキングテープなどで固定する。</p>
+<p>フラックスを接合させるPCB、LEDの金属面に塗ります。</p>
+<p><img alt="フラックス" src="../img/keychain/soldering_led_tips_flax.png" /></p>
+<p>温度を220℃に設定して小手先にハンダを盛ります。</p>
+<p><img alt="小手先にはんだをもる" src="../img/keychain/soldering_led_tips_soldering_iron.png" /></p>
+<p>金属面にハンダを持ったほうが接するようにはんだごてをあてます。</p>
+<p>すると持ったはんだが金属面に流れていきます。</p>
+<p><img alt="接合面にはんだをもる" src="../img/keychain/soldering_led_tips_solder.png" /></p>
+<p>すべての金属面に上記を行います。</p>
+<p>PCBとLEDの接合面を撫でるようにはんだごてを動かします。</p>
+<p>PCBとLEDにのったはんだがくっつけばOK。</p>
+<p><img alt="ブリッジ" src="../img/keychain/soldering_led_tips_bridge.png" /></p>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>チップLEDは温度に対して非常にデリケートです。高温で長時間熱すると壊れてしまうので以下の点を意識して行うことをおすすめします。</p>
+<ul>
+<li>温度調節機能付きはんだごてで220℃程度に設定し、長時間温めない。</li>
+<li>融点の低い鉛入りハンダを使用し、素早くはんだ付けする。</li>
+<li>フラックスを使用してはんだののりを良くする。</li>
+<li>マスキングテープなどでPCBの表から固定し、チップLEDが不必要に動かないようにする。</li>
+</ul>
+</div>
+<h3 id="_5"><i class="fa fa-arrow-circle-right"></i>キースイッチソケットの取り付け</h3>
+<p>キースイッチソケットをPCB裏面にはんだ付けします。</p>
+<p>キースイッチソケットにも向きがあります。中央の穴にソケットがかぶらないが正しい向きになります。</p>
+<p><img alt="OK" src="../img/keychain/soldering_keysocket_ok.jpg" />
+OKな例、中央の穴にソケットがかぶっていない。</p>
+<p><img alt="NG" src="../img/keychain/soldering_keysocket_ng.jpg" />
+NGな例、中央の穴にソケットがかぶっている。</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>ソケットの向きを間違えたままむりにスイッチをはめようとすると破損の原因になります。</p>
+</div>
+<p>スイッチ取付時にソケットがPCBから外れることがありますのでちょっと多めにはんだ付けすることをおすすめします。</p>
+<p><img alt="はんだ例" src="../img/keychain/soldering_keysocket_example.jpg" />
+このくらい盛っておけば十分です。</p>
+<h3 id="_6"><i class="fa fa-arrow-circle-right"></i>抵抗の取り付け</h3>
+<p>お買い上げいただいたチップLEDの色によって抵抗をつけるか、抵抗の足を取り付けるか異なります。</p>
+<h4 id="led_1">赤色チップLEDを選択した場合</h4>
+<p>抵抗をR1とプリントされている箇所に取り付けます。</p>
+<p><img alt="抵抗" src="../img/keychain/soldering_reg_reg.jpg" /></p>
+<h4 id="led_2">赤色チップLED以外を選択した場合</h4>
+<p>抵抗の足をカットしてR1とプリントされている箇所に取り付けます。</p>
+<p><img alt="抵抗" src="../img/keychain/soldering_reg_wire.jpg" /></p>
+<h3 id="_7"><i class="fa fa-arrow-circle-right"></i>電池ソケットとコネクタの取り付け</h3>
+<p>電池ソケットの裏面からコネクタを取り付けます。</p>
+<p>なるべくコネクタと電池ソケットが垂直になるように取り付けてください。</p>
+<p><img alt="電池ソケットとコネクタの取り付け" src="../img/keychain/soldering_batteryholder.jpg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>次の項の動作確認を行うため、PCBとコネクタのはんだ付けはまだ行わないでください。もし前項までの取り付けにミスがあった場合、修正がとても面倒になります。</p>
+</div>
+<h3 id="_8"><i class="fa fa-arrow-circle-right"></i>動作確認</h3>
+<p>ここまでの手順に誤りがないか、ここで一旦動作確認を行います。</p>
+<p>電池ソケットに電池を取り付け、スイッチソケットに任意のスイッチを取り付けた後、コネクタピンをPCBのうら面より接触させ、スイッチを押したときにチップLEDが光るか確認します。</p>
+<p><img alt="ソケットとPCBを接触" src="../img/keychain/check_position.jpg" />
+<img alt="スイッチ押下" src="../img/keychain/check_switch.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>もし光らない場合は主に以下の点をご確認ください。</p>
+<ul>
+<li>チップLEDの向きが正しいか？<ul>
+<li>PCB表面から見て三角の切れ込みが右側に来るのが正しいです。 </li>
+</ul>
+</li>
+<li>チップLED,スイッチソケット,抵抗のはんだ付けがちゃんとできているか？</li>
+<li>電池が正しく電池ソケットに入っているか？</li>
+<li>スイッチはちゃんとソケットに刺さっているか？<ul>
+<li>ピンが曲がってソケットにちゃんとささっていない場合があります。その場合はピンをラジオペンチなどで伸ばして再度ソケットにさしてください。</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="_9"><i class="fa fa-arrow-circle-right"></i>電池ソケットと基板の取り付け</h3>
+<p>PCBの裏面からコネクタピンを通し、PCBの表面から取り付けます。</p>
+<p>はんだ付け後、表面に飛び出たコネクタピンは切り取ってください。</p>
+<p>その後、電池ソケットに電池を挿入してください。</p>
+<p><img alt="表面" src="../img/keychain/soldering_batteryholder_to_pcb_01.jpg" />
+<img alt="横から" src="../img/keychain/soldering_batteryholder_to_pcb_02.jpg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>念の為電池ソケットから電池を抜いてから作業してください。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>コネクタピンの高さはケースと干渉しないようにPCBの表面から3mm以下の高さになるよう切り取ってください。</p>
+</div>
+<h3 id="_10"><i class="fa fa-arrow-circle-right"></i>ケース組み立て</h3>
+<p>アクリルプレートの保護シートを除去後</p>
+<p>アクリルプレート（スイッチ取り付け部）</p>
+<p>アクリルプレート（PCB直上部）</p>
+<p>PCB</p>
+<p>アクリルプレート（PCB直下部）</p>
+<p>アクリルプレート（底部）の順に重ねてネジ止めします。</p>
+<p><img alt="保護シート除去" src="../img/keychain/acrylic_remove_sheet.jpg" />
+<img alt="組み立て" src="../img/keychain/acrylic_build.jpg" /></p>
+<h3 id="_11"><i class="fa fa-arrow-circle-right"></i>ストラップ取り付け</h3>
+<p>ストラップをPCBに取り付けます。</p>
+<p><img alt="ストラップ取り付け" src="../img/keychain/strap.jpg" /></p>
+<h3 id="_12"><i class="fa fa-arrow-circle-right"></i>キースイッチの取り付け</h3>
+<p>お好みのスイッチ、キーキャップを取り付けて完成です<img alt="🎉" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f389.png" title=":tada:" /><img alt="🎉" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f389.png" title=":tada:" /><img alt="🎉" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f389.png" title=":tada:" />。お疲れ様でした。</p>
+<p><img alt="完成" src="../img/keychain/done_01.jpg" />
+<img alt="カチカチ" src="../img/keychain/done_02.jpg" /></p>
+                
+              
+              
+                
 
-</body>
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../home/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.53cc9318.min.js"></script>
+      <script src="../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
 </html>
