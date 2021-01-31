@@ -22,22 +22,22 @@ Keychainは以下の特徴を持ったキースイッチ型ストラップの組
 
 商品がお手元に到着しましたら以下のものが同梱されているかご確認ください。
 
-| 品名                                   | 個数 |                                 写真、備考                                 |
-| :------------------------------------- | ---: | :------------------------------------------------------------------------: |
-| PCB                                    |    1 | ![PCB](img/keychain/01_pcb.jpg)PCB横の切れ込みは右側になることもあります。 |
-| 抵抗                                   |    1 |                      ![抵抗](img/keychain/01_reg.jpg)                      |
-| チップLED                              |    2 |         ![チップLED](img/keychain/01_led.jpg)1つは壊れたときの予備         |
-| スイッチ用PCBソケット                  |    1 |       ![スイッチ用PCBソケット](img/keychain/01_keyswitch_socket.jpg)       |
-| ボタン電池                             |    1 |                 ![ボタン電池](img/keychain/01_battery.jpg)                 |
-| ボタン電池ソケット                     |    1 |          ![ボタン電池ソケット](img/keychain/01_batteryholder.jpg)          |
-| ボタン電池ソケットコネクタ（4PIN）     |    1 |                   ボタン電池ソケットのパッケージ内に同梱                   |
-| ネジ                                   |    8 |                     ![ネジ](img/keychain/01_screw.jpg)                     |
-| スペーサー                             |    4 |                 ![スペーサー](img/keychain/01_spacer.jpg)                  |
-| アクリルプレート（スイッチ取り付け部） |    1 |               ![アクリル01](img/keychain/01_acrylic_01.jpg)                |
-| アクリルプレート（PCB直上部）          |    1 |        ![アクリル02](img/keychain/01_acrylic_02.jpg)厚さが3mmのほう        |
-| アクリルプレート（PCB直下部）          |    1 |        ![アクリル03](img/keychain/01_acrylic_03.jpg)厚さが7mmのほう        |
-| アクリルプレート（底部）               |    1 |               ![アクリル04](img/keychain/01_acrylic_04.jpg)                |
-| ストラップ                             |    1 |                  ![ストラップ](img/keychain/01_strap.jpg)                  |
+| 品名                                   | 個数 |                                         写真、備考                                          |
+| :------------------------------------- | ---: | :-----------------------------------------------------------------------------------------: |
+| PCB                                    |    1 | ![PCB](img/keychain/01_pcb.jpg){: loading=lazy }PCB横の切れ込みは右側になることもあります。 |
+| 抵抗                                   |    1 |                      ![抵抗](img/keychain/01_reg.jpg){: loading=lazy }                      |
+| チップLED                              |    2 |         ![チップLED](img/keychain/01_led.jpg){: loading=lazy }1つは壊れたときの予備         |
+| スイッチ用PCBソケット                  |    1 |       ![スイッチ用PCBソケット](img/keychain/01_keyswitch_socket.jpg){: loading=lazy }       |
+| ボタン電池                             |    1 |                 ![ボタン電池](img/keychain/01_battery.jpg){: loading=lazy }                 |
+| ボタン電池ソケット                     |    1 |          ![ボタン電池ソケット](img/keychain/01_batteryholder.jpg){: loading=lazy }          |
+| ボタン電池ソケットコネクタ（4PIN）     |    1 |                           ボタン電池ソケットのパッケージ内に同梱                            |
+| ネジ                                   |    8 |                     ![ネジ](img/keychain/01_screw.jpg){: loading=lazy }                     |
+| スペーサー                             |    4 |                 ![スペーサー](img/keychain/01_spacer.jpg){: loading=lazy }                  |
+| アクリルプレート（スイッチ取り付け部） |    1 |               ![アクリル01](img/keychain/01_acrylic_01.jpg){: loading=lazy }                |
+| アクリルプレート（PCB直上部）          |    1 |        ![アクリル02](img/keychain/01_acrylic_02.jpg){: loading=lazy }厚さが3mmのほう        |
+| アクリルプレート（PCB直下部）          |    1 |        ![アクリル03](img/keychain/01_acrylic_03.jpg){: loading=lazy }厚さが7mmのほう        |
+| アクリルプレート（底部）               |    1 |               ![アクリル04](img/keychain/01_acrylic_04.jpg){: loading=lazy }                |
+| ストラップ                             |    1 |                  ![ストラップ](img/keychain/01_strap.jpg){: loading=lazy }                  |
 
 !!! Note
     万が一不足がある場合はBoothのメッセージにてご連絡ください。
@@ -55,10 +55,10 @@ Keychainは以下の特徴を持ったキースイッチ型ストラップの組
 
 PCBの表面、裏面の表記は以下のとおりとします。
 
-| 表記 |                                  写真 |                 備考                 |
-| :--- | ------------------------------------: | :----------------------------------: |
-| 表面 | ![表面](img/keychain/pcb_surface.jpg) |        キースイッチが刺さる側        |
-| 裏面 |    ![裏面](img/keychain/pcb_back.jpg) | ボタン電池ソケットが取り付けられる側 |
+| 表記 |                                                   写真 |                 備考                 |
+| :--- | -----------------------------------------------------: | :----------------------------------: |
+| 表面 | ![表面](img/keychain/pcb_surface.jpg){: loading=lazy } |        キースイッチが刺さる側        |
+| 裏面 |    ![裏面](img/keychain/pcb_back.jpg){: loading=lazy } | ボタン電池ソケットが取り付けられる側 |
 
 ### :fa-arrow-circle-right:チップLEDの取り付け
 
@@ -68,8 +68,8 @@ PCBの表面、裏面の表記は以下のとおりとします。
 
 PCBの表から見て三角の切れ込みが右側になるようにはんだ付けしてください。
 
-![LEDの方向](img/keychain/soldering_led_adjust.jpg)
-![LEDの方向](img/keychain/soldering_led.jpg)
+![LEDの方向](img/keychain/soldering_led_adjust.jpg){: loading=lazy }
+![LEDの方向](img/keychain/soldering_led.jpg){: loading=lazy }
 
 !!! Tips LEDの取り付け例
     一例として以下のようにはんだ付けすると比較的楽にはんだ付けできます。
@@ -87,17 +87,17 @@ PCBの表から見て三角の切れ込みが右側になるようにはんだ�
 
     フラックスを接合させるPCB、LEDの金属面に塗ります。
 
-    ![フラックス](img/keychain/soldering_led_tips_flax.png)
+    ![フラックス](img/keychain/soldering_led_tips_flax.png){: loading=lazy }
 
     温度を220℃に設定して小手先にハンダを盛ります。
 
-    ![小手先にはんだをもる](img/keychain/soldering_led_tips_soldering_iron.png)
+    ![小手先にはんだをもる](img/keychain/soldering_led_tips_soldering_iron.png){: loading=lazy }
 
     PCBの金属面にハンダを持ったほうが接するようにはんだごてをあてます。
 
     するとはんだが金属面に流れていきます。
 
-    ![接合面にはんだをもる](img/keychain/soldering_led_tips_solder.png)
+    ![接合面にはんだをもる](img/keychain/soldering_led_tips_solder.png){: loading=lazy }
 
     同様にLEDの金属面に上記を行います。
 
@@ -105,7 +105,7 @@ PCBの表から見て三角の切れ込みが右側になるようにはんだ�
 
     PCBとLEDにのったはんだがくっつけばOK。
 
-    ![ブリッジ](img/keychain/soldering_led_tips_bridge.png)
+    ![ブリッジ](img/keychain/soldering_led_tips_bridge.png){: loading=lazy }
 
     もう片方の面も同様にはんだ付けする。
 
@@ -123,10 +123,12 @@ PCBの表から見て三角の切れ込みが右側になるようにはんだ�
 
 キースイッチソケットにも向きがあります。中央の穴にソケットがかぶらないが正しい向きになります。
 
-![OK](img/keychain/soldering_keysocket_ok.jpg)
+![OK](img/keychain/soldering_keysocket_ok.jpg){: loading=lazy }
+
 OKな例、中央の穴にソケットがかぶっていない。
 
-![NG](img/keychain/soldering_keysocket_ng.jpg)
+![NG](img/keychain/soldering_keysocket_ng.jpg){: loading=lazy }
+
 NGな例、中央の穴にソケットがかぶっている。
 
 !!! Caution
@@ -134,7 +136,7 @@ NGな例、中央の穴にソケットがかぶっている。
 
 スイッチ取付時にソケットがPCBから外れることがありますのでちょっと多めにはんだ付けすることをおすすめします。
 
-![はんだ例](img/keychain/soldering_keysocket_example.jpg)
+![はんだ例](img/keychain/soldering_keysocket_example.jpg){: loading=lazy }
 このくらい盛っておけば十分です。
 
 ### :fa-arrow-circle-right:抵抗の取り付け
@@ -145,13 +147,13 @@ NGな例、中央の穴にソケットがかぶっている。
 
 抵抗をR1とプリントされている箇所に取り付けます。
 
-![抵抗](img/keychain/soldering_reg_reg.jpg)
+![抵抗](img/keychain/soldering_reg_reg.jpg){: loading=lazy }
 
 #### 赤色チップLED以外を選択した場合
 
 抵抗の足をカットしてR1とプリントされている箇所に取り付けます。
 
-![抵抗](img/keychain/soldering_reg_wire.jpg)
+![抵抗](img/keychain/soldering_reg_wire.jpg){: loading=lazy }
 
 ### :fa-arrow-circle-right:電池ソケットとコネクタの取り付け
 
@@ -159,7 +161,7 @@ NGな例、中央の穴にソケットがかぶっている。
 
 なるべくコネクタと電池ソケットが垂直になるように取り付けてください。
 
-![電池ソケットとコネクタの取り付け](img/keychain/soldering_batteryholder.jpg)
+![電池ソケットとコネクタの取り付け](img/keychain/soldering_batteryholder.jpg){: loading=lazy }
 
 !!! Warning
     次の項の動作確認を行うため、PCBとコネクタのはんだ付けはまだ行わないでください。もし前項までの取り付けにミスがあった場合、修正がとても面倒になります。
@@ -170,8 +172,8 @@ NGな例、中央の穴にソケットがかぶっている。
 
 電池ソケットに電池を取り付け、スイッチソケットに任意のスイッチを取り付けた後、コネクタピンをPCBのうら面より接触させ、スイッチを押したときにチップLEDが光るか確認します。
 
-![ソケットとPCBを接触](img/keychain/check_position.jpg)
-![スイッチ押下](img/keychain/check_switch.png)
+![ソケットとPCBを接触](img/keychain/check_position.jpg){: loading=lazy }
+![スイッチ押下](img/keychain/check_switch.png){: loading=lazy }
 
 !!! Tip
     もし光らない場合は主に以下の点をご確認ください。
@@ -191,8 +193,8 @@ PCBの裏面からコネクタピンを通し、PCBの表面から取り付け�
 
 その後、電池ソケットに電池を挿入してください。
 
-![表面](img/keychain/soldering_batteryholder_to_pcb_01.jpg)
-![横から](img/keychain/soldering_batteryholder_to_pcb_02.jpg)
+![表面](img/keychain/soldering_batteryholder_to_pcb_01.jpg){: loading=lazy }
+![横から](img/keychain/soldering_batteryholder_to_pcb_02.jpg){: loading=lazy }
 
 !!! Warning
     念の為電池ソケットから電池を抜いてから作業してください。
@@ -214,18 +216,18 @@ PCB
 
 アクリルプレート（底部）の順に重ねてネジ止めします。
 
-![保護シート除去](img/keychain/acrylic_remove_sheet.jpg)
-![組み立て](img/keychain/acrylic_build.jpg)
+![保護シート除去](img/keychain/acrylic_remove_sheet.jpg){: loading=lazy }
+![組み立て](img/keychain/acrylic_build.jpg){: loading=lazy }
 
 ### :fa-arrow-circle-right:ストラップ取り付け
 
 ストラップをPCBに取り付けます。
 
-![ストラップ取り付け](img/keychain/strap.jpg)
+![ストラップ取り付け](img/keychain/strap.jpg){: loading=lazy }
 
 ### :fa-arrow-circle-right:キースイッチの取り付け
 
 お好みのスイッチ、キーキャップを取り付けて完成です:tada::tada::tada:。お疲れ様でした。
 
-![完成](img/keychain/done_01.jpg)
-![カチカチ](img/keychain/done_02.jpg)
+![完成](img/keychain/done_01.jpg){: loading=lazy }
+![カチカチ](img/keychain/done_02.jpg){: loading=lazy }
