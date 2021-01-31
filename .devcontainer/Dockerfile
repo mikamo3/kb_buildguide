@@ -24,6 +24,7 @@ RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g \
     textlint-rule-preset-jtf-style \
     textlint-rule-preset-ja-spacing \
     textlint-rule-preset-ja-technical-writing \
-    textlint-rule-spellcheck-tech-word" 2>&1
+    textlint-rule-spellcheck-tech-word \
+    textlint-filter-rule-allowlist" 2>&1
 
 RUN echo '{ "path": "cz-emoji" }' > /home/vscode/.czrc && chown vscode /home/vscode/.czrc
