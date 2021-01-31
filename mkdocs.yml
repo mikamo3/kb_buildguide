@@ -1,1 +1,30 @@
 site_name: ビルドガイド
+theme: material
+nav:
+  - Home: home.md
+  - Keychain: keychain.md
+
+extra:
+  palette:
+    primary: "indigo"
+    accent: "red"
+  site:
+    name: キーボード屋　かもさん
+    url: https://mkamo3.booth.pm/
+
+extra_css:
+  - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+  - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
+  - "css/custom.css"
+  - "//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+plugins:
+  - macros
+
+markdown_extensions:
+  - admonition
+  - fontawesome_markdown
+  - pymdownx.emoji
+
+google_analytics:
+  - "G-TLJ8NFYHM6"
+  - "auto"
