@@ -35,9 +35,6 @@ Keychainは以下の特徴を持ったキースイッチ型ストラップの組
 | アクリルプレート（底部）               |    1 |               ![アクリル04](img/keychain/01_acrylic_04.jpg){: loading=lazy }                |
 | ストラップ                             |    1 |                  ![ストラップ](img/keychain/01_strap.jpg){: loading=lazy }                  |
 
-!!! Note
-    万が一不足がある場合はBoothのメッセージにてご連絡ください。
-
 ### :fa-arrow-circle-right:別途容易いただくもの
 
 以下のものは別途ご用意ください。
