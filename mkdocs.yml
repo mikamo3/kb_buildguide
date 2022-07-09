@@ -24,7 +24,7 @@ markdown_extensions:
   - admonition
   - fontawesome_markdown
   - pymdownx.emoji
-
+  - attr_list
 google_analytics:
   - "G-TLJ8NFYHM6"
   - "auto"
